@@ -17,6 +17,26 @@
 - What does "virtual" do in Mongoose?
 - Explain built-in-promises in Mongoose?
 - How are documents mapped in Mongoose?
+- What are custom instance methods and static methods?
+
+**Review this code snippet from Mongoose's homepage**
+
+```
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/test');
+
+var Cat = mongoose.model('Cat', { name: String });
+
+var kitty = new Cat({ name: 'Zildjian' });
+kitty.save(function (err) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log('meow');
+  }
+});
+
+```
 
 **Resources**
 [Google Search Engine is your best friend](https://www.google.com/)
