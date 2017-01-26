@@ -18,6 +18,7 @@
 - Explain built-in-promises in Mongoose?
 - How are documents mapped in Mongoose?
 - What are custom instance methods and static methods?
+- What are the 8 built-in types that we can specify for our properties in Mongoose?
 
 **Review this code snippet from Mongoose's homepage**
 
