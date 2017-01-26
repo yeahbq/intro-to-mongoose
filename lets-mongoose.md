@@ -81,14 +81,14 @@ Static methods which operate on the entire collection (ie db.collection.find() )
 
 ##- What are the 8 built-in types that we can specify for our properties in Mongoose?
 
-*String
-*Number
-*Boolean
-*Date
-*Array - []
-*mongoose.Schema.Types.ObjectId
-*mongoose.Schema.Types.Buffer
-*mongoose.Schema.Types.Mixed
+* String
+* Number
+* Boolean
+* Date
+* Array - []
+* mongoose.Schema.Types.ObjectId
+* mongoose.Schema.Types.Buffer
+* mongoose.Schema.Types.Mixed
 
 
 
