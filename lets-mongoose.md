@@ -97,4 +97,5 @@ kitty.save(function (err) {
 **Resources**
 [Google Search Engine is your best friend](https://www.google.com/)
 [Mongoose Official Doc](http://mongoosejs.com/)
+[Mongoose Gist ppt](https://gist.github.com/jim-clark/85fb003f3063e6d152da8a1ab51a51ab)
 
