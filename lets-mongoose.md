@@ -15,8 +15,15 @@ Mongoose allows us to define schemas and ensures that documents conform.
 Using the Mongoose ODM is by far the most popular way to perform CRUD on a MongoDB.
 
 ##- What does the word "abstraction" mean?
+A way to remove complexity and being able to work without worrying on the details
+
 ##- How do we use mongoose?
+Install mongoose driver for nodemodule locally (npm install --save mongoose).
+Require it (var mongoose = require('mongoose') )
+
 ##- What are models in Mongoose?
+Constructors compiled from schemas. Scehmas are the blueprints/settings and models are the instance
+to be able to perform CRUD operations on mongoDB.
 
 ##- Define what schema means in Mongoose?
 Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection and
@@ -24,11 +31,11 @@ defines the shape of the documents within that collection.
 
 ##- How do we connect to our database?
 var mongoose = require('mongoose');
-
 mongoose.connect('mongodb://localhost/movies');
 
 ##- What is a "model"?
-A constructor compiled from schemas definitions (1:1) from a schema
+A constructor compiled from schemas definitions (1:1) from a schema. Required to perform CRUD on 
+mongoDB.
 
 ##- What is data denormalization and data deduplication?
 Database normalization, or simply normalization, is the process of organizing the columns 
@@ -43,13 +50,21 @@ In that way, data duplication closely aligns with incremental backup, which copi
 that has changed since the precvious backup.
 
 ##- What is "built-in-typecasting" in Mongoose?
+Converting data from one type to another (ie number to string). Non-destructive and only performs
+on that specific transaction (a query that only hits once).
 
 ##- What is the "population" feature in Mongoose?
 Population is the process of automatically replcaing the specified paths in the document
 with documents from other collections.
 
 ##- What does "virtual" do in Mongoose?
-Virtual properties - create properties like "fullName" that are not persisted in the database
+Virtual properties - create properties like "fullName" that are not persisted in the database.
+Is like an object.
+```
+user.virtual {
+    fullName: firstName + lastName
+}
+```
 
 ##- Explain built-in-promises in Mongoose?
 Mongoose async operations, like .save() and queries, return Promises/A+ conformant promises.
@@ -61,18 +76,20 @@ Mongoose documents represent a one-to-one mapping to documents as stored in Meon
 document is an instance of its Model.
 
 ##- What are custom instance methods and static methods?
-Custom Instance methods which operate on the document
-Static methods which operate on the entire collection
+Custom Instance methods which operate on the document (id 1984.findsimilar() )
+Static methods which operate on the entire collection (ie db.collection.find() )
 
 ##- What are the 8 built-in types that we can specify for our properties in Mongoose?
--String
--Number
--Boolean
--Date
--mongoose.Schema.Types.ObjectId
--mongoose.Schema.Types.Buffer
--Array - []
--mongoose.Schema.Types.Mixed
+```
+*String
+*Number
+*Boolean
+*Date
+*Array - []
+*mongoose.Schema.Types.ObjectId
+*mongoose.Schema.Types.Buffer
+*mongoose.Schema.Types.Mixed
+```
 
 
 **Review this code snippet from Mongoose's homepage**
