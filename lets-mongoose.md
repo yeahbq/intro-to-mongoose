@@ -3,8 +3,17 @@
 **Within your squads explore these questions**
 
 - What is an ODM?
+Mongoose is to MongoDB as ActiveRecord is to a SQL database. However, because it maps code to
+>>Mongo's documents, it is referred to as an Object Document Mapper (ODM) instead of an ORM, but 
+>>their general purpose is the same.
+
 - What is MongooseJS?
+>>"Mongoose provides a straight-forward, schema-based solution to model your application data"
+
 - Why do we need MongooseJS?
+>>Mongoose allows us to define schemas and ensures that documents conform.
+>>Using the Mongoose ODM is by far the most popular way to perform CRUD on a MongoDB.
+
 - What does the word "abstraction" mean?
 - How do we use mongoose?
 - What are models in Mongoose?
@@ -14,6 +23,9 @@
 >>defines the shape of the documents within that collection.
 
 - How do we connect to our database?
+>>var mongoose = require('mongoose');
+
+>>mongoose.connect('mongodb://localhost/movies');
 
 - What is a "model"?
 >>A constructor compiled from schemas definitions (1:1) from a schema
@@ -37,6 +49,7 @@
 >>with documents from other collections.
 
 - What does "virtual" do in Mongoose?
+Virtual properties - create properties like "fullName" that are not persisted in the database
 
 - Explain built-in-promises in Mongoose?
 >>Mongoose async operations, like .save() and queries, return Promises/A+ conformant promises.
@@ -48,9 +61,19 @@
 >>document is an instance of its Model.
 
 - What are custom instance methods and static methods?
-
+Custom Instance methods which operate on the document
+Static methods which operate on the entire collection
 
 - What are the 8 built-in types that we can specify for our properties in Mongoose?
+String
+Number
+Boolean
+Date
+mongoose.Schema.Types.ObjectId
+mongoose.Schema.Types.Buffer
+Array - []
+mongoose.Schema.Types.Mixed
+
 
 **Review this code snippet from Mongoose's homepage**
 
