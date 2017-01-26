@@ -80,7 +80,7 @@ Custom Instance methods which operate on the document (id 1984.findsimilar() )
 Static methods which operate on the entire collection (ie db.collection.find() )
 
 ##- What are the 8 built-in types that we can specify for our properties in Mongoose?
-```
+
 *String
 *Number
 *Boolean
@@ -89,7 +89,7 @@ Static methods which operate on the entire collection (ie db.collection.find() )
 *mongoose.Schema.Types.ObjectId
 *mongoose.Schema.Types.Buffer
 *mongoose.Schema.Types.Mixed
-```
+
 
 
 **Review this code snippet from Mongoose's homepage**
